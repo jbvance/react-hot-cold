@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: u6aVGx721PThXZE3L/VlYTdn7EWOnn5k3Qz/MQC+8JRt1gjuV0zjJmaO1bF5htFDxAg+EqBPObm57vfwXCRQ/VCIqFRfyjy9hPoR+6DauhaDOeAJ+pl+DZvwh+mexcUZw4fTY5bNLSE4D+VyUUWdznNFpeUWDkI/zLQ88fTqsQa+DwCb3y5Rr6Zahdu/bChdxnxhxxa6VELlBMXHGZAXRwCZBwcxC/4S/FoMR2i0M9RTePc32KI8glsDCc+0FAOV7GiAS7jOnIsggBzGSp7OVNvCNbukWyXcko/F8OxdzMlI2BtbXOj4ykiYD0S5UJ8BECnxtt/PR4Q1N+Ncbhd0ILGqFQQwuh7ZT+BGIJnsvA750oyIHAZFPOyq1JIuIni/dBVg9eQQ5e5ffiG1QPyKafgGLPvg0o89TWFU+3T+3As7jPktm6H6it4SZ4i7GUzBgqvw7XVVLaiAufH5xH6LMBHxlXuk6Pdsy/b/M3IUVoLyeAqWzDxERLndnDBcackddrhjziHXM9iBw4/zMwWumLH7yCPa5y2DtX4w0KLcMq8ukSq9Tgzpgm2QUIMb/3yfuiCYgOu1MyRq6/NfVOwe8TuMnba1FlKUN6rMmnunY0s2SOtYbdyU0s8FoKmwzKVzC5bBeMYMIv5eM8bL2bXJ4CVc15vMCnrDtZ8LtiCQNRI=
+  app: cryptic-meadow-23628
+  on:
+    repo: jbvance/react-hot-cold
